@@ -1,0 +1,538 @@
+# Spanish translations for Pygrep package
+# Traducciones al español para el paquete Pygrep.
+# Copyright (C) 2010 Miguel Ángel García
+# Miguel Ángel García <miguelangel.garcia@gmail.com>, 2010.
+# Miguel Ángel García <miguelangel.garcia@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: 3.0.X\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-31 12:38+0100\n"
+"PO-Revision-Date: 2010-01-31 12:38+0100\n"
+"Last-Translator: Miguel Ángel García <miguelangel.garcia@gmail.com>\n"
+"Language-Team: Spanish <>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../EnginePygrep.py:133
+msgid "Problems while opening file '%s': %s"
+msgstr "Problemas al abrir el fichero '%s': %s"
+
+#: ../EnginePygrep.py:137
+msgid "Unknown error opening file '%s': %s"
+msgstr "Error desconocido al abrir el fichero '%s': %s"
+
+#: ../EnginePygrep.py:194
+msgid "Empty string matching is not allowed"
+msgstr "No están permitidas cadenas de coincidencia vacías"
+
+#: ../viewergtk.py:113
+msgid "Image '%s' not found. "
+msgstr "No se encuentra la imagen '%s'"
+
+#: ../viewergtk.py:189
+msgid "Sorry. This is a BETA version."
+msgstr "Disculpe. Esta es una versión BETA."
+
+#: ../viewergtk.py:190
+msgid "It may not work well and may corrupt your profiles,"
+msgstr "Puede que no funcione bien y corrompa sus perfiles,"
+
+#: ../viewergtk.py:191
+msgid "so you must search for a release version."
+msgstr "por lo que debería buscar la versión definitiva."
+
+#: ../viewergtk.py:192
+msgid "Click CANCEL to abort or OK to continue with no warranty."
+msgstr "Pulse CANCELAR para salir o OK para continuar sin ninguna garantía."
+
+#: ../viewergtk.py:193
+msgid "Thank you."
+msgstr "Gracias."
+
+#: ../viewergtk.py:210
+msgid "#Matches"
+msgstr "#Coincidencias"
+
+#: ../viewergtk.py:212
+msgid "Filename"
+msgstr "Nombre de fichero"
+
+#: ../viewergtk.py:214
+msgid "Full Filename Path"
+msgstr "Ruta completa al fichero"
+
+#: ../viewergtk.py:216
+msgid "Size"
+msgstr "Tamaño"
+
+#: ../viewergtk.py:218
+msgid "Type"
+msgstr "Tipo"
+
+#: ../viewergtk.py:232
+msgid "Line"
+msgstr "Línea"
+
+#: ../viewergtk.py:234
+msgid "Text"
+msgstr "Texto"
+
+#: ../viewergtk.py:268
+msgid "<Do not use>"
+msgstr "<No usar>"
+
+#: ../viewergtk.py:285
+msgid "<< You must enter here your search pattern >>"
+msgstr "<<Debe introducir aquí el patrón a buscar>>"
+
+#: ../viewergtk.py:465 ../viewergtk.py:467 ../viewergtk.py:469
+msgid "<b>BINARY LINE</b>."
+msgstr "<b>LÍNEA BINARIA</b>."
+
+#: ../viewergtk.py:559
+msgid "Profile Name"
+msgstr "Nombre de perfil"
+
+#: ../viewergtk.py:616
+msgid "The profile %s will be deleted forever. Are you sure?"
+msgstr "El perfile %s se eliminará para siempre. ¿Está usted seguro?"
+
+#: ../viewergtk.py:714 ../viewergtk.py:725 ../viewergtk.py:736
+#: ../viewergtk.py:940
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: ../viewergtk.py:715 ../viewergtk.py:726 ../viewergtk.py:737
+#: ../viewergtk.py:941
+msgid "Pattern"
+msgstr "Patrón"
+
+#: ../viewergtk.py:845 ../viewergtk.py:857
+msgid "Add directory"
+msgstr "Añadir directorio"
+
+#: ../viewergtk.py:898 ../viewergtk.py:904
+msgid "Inclusions"
+msgstr "Inclusiones"
+
+#: ../viewergtk.py:899 ../viewergtk.py:905
+msgid "Set the Inclusion Pattern"
+msgstr "Establecer el patrón de inclusión"
+
+#: ../viewergtk.py:914
+msgid "Exclusions"
+msgstr "Exclusiones"
+
+#: ../viewergtk.py:915 ../viewergtk.py:921
+msgid "Set the Exclusion Pattern"
+msgstr "Establecer el patrón de exclusión"
+
+#: ../viewergtk.py:920
+msgid "Exclusion"
+msgstr "Exclusión"
+
+#: ../glade/pygrep.glade:7
+msgid "Pygrep"
+msgstr "Pygrep"
+
+#: ../glade/pygrep.glade:23
+msgid "_Archivo"
+msgstr "_Archivo"
+
+#: ../glade/pygrep.glade:81
+msgid "_Editar"
+msgstr "_Editar"
+
+#: ../glade/pygrep.glade:121
+msgid "Regular Expresion Editor..."
+msgstr "Editor de expresiones regulares..."
+
+#: ../glade/pygrep.glade:133
+msgid "_Ver"
+msgstr "_Ver"
+
+#: ../glade/pygrep.glade:141
+msgid "Toolbar Options"
+msgstr "Opciones de la barra de herramientas"
+
+#: ../glade/pygrep.glade:149
+msgid "Do not show"
+msgstr "No mostrar"
+
+#: ../glade/pygrep.glade:158
+msgid "Only Icons"
+msgstr "Sólo iconos"
+
+#: ../glade/pygrep.glade:167
+msgid "Only Text"
+msgstr "Sólo Texto"
+
+#: ../glade/pygrep.glade:177
+msgid "Icons and Text"
+msgstr "Iconos y texto"
+
+#: ../glade/pygrep.glade:196
+msgid "Ay_uda"
+msgstr "Ay_uda"
+
+#: ../glade/pygrep.glade:226
+msgid "Preferences"
+msgstr "Preferencias"
+
+#: ../glade/pygrep.glade:248 ../glade/pygrep.glade:1590
+msgid "History"
+msgstr "Historia"
+
+#: ../glade/pygrep.glade:285
+msgid "Edit Profile"
+msgstr "Editar Perfil"
+
+#: ../glade/pygrep.glade:307
+msgid "Enable Regular Expresion mode"
+msgstr "Habilitar modo con Expresiones Regulares"
+
+#: ../glade/pygrep.glade:308
+msgid "Regular Expresion"
+msgstr "Expresión regular"
+
+#: ../glade/pygrep.glade:321
+msgid "Ignore the case in the pattern"
+msgstr "Hace que el patrón no sea sensible a mayúsculas"
+
+#: ../glade/pygrep.glade:322
+msgid "Insensitive"
+msgstr "No sensible a mayúsculas"
+
+#: ../glade/pygrep.glade:334
+msgid "Search complete words"
+msgstr "Buscar palabras completas"
+
+#: ../glade/pygrep.glade:335
+msgid "By Word"
+msgstr "Por palabra"
+
+#: ../glade/pygrep.glade:356
+msgid "Open your favourite brower with Pygrep site."
+msgstr "Abre su navegador favorito con el sitio web de Pygrep."
+
+#: ../glade/pygrep.glade:357
+msgid "Help"
+msgstr "Ayuda"
+
+#: ../glade/pygrep.glade:425
+msgid "Search"
+msgstr "Buscar"
+
+#: ../glade/pygrep.glade:451
+msgid "Search on the files listed below, not in configured dirs"
+msgstr ""
+"Buscar en los ficheros listados más abajo, no en los directorios configurados"
+
+#: ../glade/pygrep.glade:476
+msgid "Refine"
+msgstr "Refinar"
+
+#: ../glade/pygrep.glade:601
+msgid "New Profile"
+msgstr "Nuevo perfil"
+
+#: ../glade/pygrep.glade:640
+msgid "Name:"
+msgstr "Nombre:"
+
+#: ../glade/pygrep.glade:709 ../glade/pygrep.glade:843
+msgid "Profiles"
+msgstr "Perfiles"
+
+#: ../glade/pygrep.glade:831
+msgid "<b>Profile List</b>"
+msgstr "<b>Lista de Perfiles</b>"
+
+#: ../glade/pygrep.glade:880 ../glade/pygrep.glade:1142
+#: ../glade/pygrep.glade:1286
+msgid "Bold"
+msgstr "Negrita"
+
+#: ../glade/pygrep.glade:892 ../glade/pygrep.glade:1154
+#: ../glade/pygrep.glade:1298
+msgid "Italic"
+msgstr "Cursiva"
+
+#: ../glade/pygrep.glade:911 ../glade/pygrep.glade:934
+#: ../glade/pygrep.glade:1173 ../glade/pygrep.glade:1196
+#: ../glade/pygrep.glade:1317 ../glade/pygrep.glade:1340
+msgid "Example of color"
+msgstr "Ejemplo de color"
+
+#: ../glade/pygrep.glade:960 ../glade/pygrep.glade:1222
+#: ../glade/pygrep.glade:1366
+msgid "Foreground:"
+msgstr "Color de texto:"
+
+#: ../glade/pygrep.glade:969 ../glade/pygrep.glade:1231
+#: ../glade/pygrep.glade:1375
+msgid "Background:"
+msgstr "Color de fondo:"
+
+#: ../glade/pygrep.glade:992
+msgid "<b>File Match</b>"
+msgstr "<b>Coincidencias de fichero</b>"
+
+#: ../glade/pygrep.glade:1028
+msgid "File Pattern:"
+msgstr "Patrón de fichero:"
+
+#: ../glade/pygrep.glade:1034
+msgid "Path:"
+msgstr "Ruta:"
+
+#: ../glade/pygrep.glade:1047
+msgid "file"
+msgstr "fichero"
+
+#: ../glade/pygrep.glade:1060
+msgid "path/to/filename/file"
+msgstr "ruta/al/nombre\\_de\\_fichero/fichero"
+
+#: ../glade/pygrep.glade:1076 ../glade/pygrep.glade:1506
+msgid "<b>Example</b>"
+msgstr "<b>Ejemplo</b>"
+
+#: ../glade/pygrep.glade:1103
+msgid "File Match"
+msgstr "Coincidencias de fichero"
+
+#: ../glade/pygrep.glade:1254
+msgid "<b>Line Match (Line)</b>"
+msgstr "<b>Coincidencias de línea (línea)</b>"
+
+#: ../glade/pygrep.glade:1398
+msgid "<b>Line Match (Match)</b>"
+msgstr "<b>Coincidencias de línea (coincidencia)</b>"
+
+#: ../glade/pygrep.glade:1437
+msgid "Pattern:"
+msgstr "Patrón:"
+
+#: ../glade/pygrep.glade:1443
+msgid "Text:"
+msgstr "Texto:"
+
+#: ../glade/pygrep.glade:1456
+msgid "text"
+msgstr "texto"
+
+#: ../glade/pygrep.glade:1481
+msgid ""
+"This text is an example of lines that matchs the patterns.\n"
+"There is some lines that does not match.\n"
+"So, you can check if you like the text properties you choose.\n"
+"That's all."
+msgstr ""
+"Éste es un texto de ejemplo de líneas que coinciden con el patrón.\n"
+"Hay algunas líneas que no coinciden.\n"
+"De esta manera, se puede comprobar si le gustan las propiedades de texto que "
+"eligió.\n"
+"Eso es todo."
+
+#: ../glade/pygrep.glade:1529
+msgid "Line Match"
+msgstr "Coincidencia de línea"
+
+#: ../glade/pygrep.glade:1624
+msgid "<b>Pattern History</b>"
+msgstr "<b>Histórico de patrones</b>"
+
+#: ../glade/pygrep.glade:1701
+msgid "Profile Editor"
+msgstr "Editor de perfiles"
+
+#: ../glade/pygrep.glade:1736
+msgid "Lines to show before match:"
+msgstr "Líneas a mostrar antes de la coincidencia:"
+
+#: ../glade/pygrep.glade:1759
+msgid "Lines to show after match:"
+msgstr "Líneas a motrar después de la coincidencia:"
+
+#: ../glade/pygrep.glade:1795
+msgid "Search Options"
+msgstr "Opciones de búsqueda"
+
+#: ../glade/pygrep.glade:1838
+msgid "/usr/bin/emacs21 +%l %f"
+msgstr "/usr/bin/emacs21 +%l %f"
+
+#: ../glade/pygrep.glade:1849
+msgid ""
+"<i>For Example:</i> \n"
+"<tt>  /usr/bin/emacs21 +%l %f  \n"
+"  /usr/bin/emacsclient -n -a /usr/bin/emacs +%l %f\n"
+"  gedit +%l %f\n"
+"  kate -u -l %l %f\n"
+"</tt>"
+msgstr ""
+"<i>Por Ejemplo:</i> \n"
+"<tt>  /usr/bin/emacs21 +%l %f  \n"
+"  /usr/bin/emacsclient -n -a /usr/bin/emacs +%l %f\n"
+"  gedit +%l %f\n"
+"  kate -u -l %l %f\n"
+"</tt>"
+
+#: ../glade/pygrep.glade:1871
+msgid ""
+"Patterns:\n"
+"    <b>%f</b>  - File with path\n"
+"    <b>%l</b>  - Line number\n"
+"    <b>%F</b> - File name\n"
+"    <b>%P</b> - Path"
+msgstr ""
+"Patrones:\n"
+"    <b>%f</b>  - Fichero con la ruta\n"
+"    <b>%l</b>  - Número de línea\n"
+"    <b>%F</b> - Nombre de fichero\n"
+"    <b>%P</b> - Ruta"
+
+#: ../glade/pygrep.glade:1893
+msgid "Minimize after launching command"
+msgstr "Minimizar después de lanzar la orden"
+
+#: ../glade/pygrep.glade:1910
+msgid "<b>Command to execute</b>"
+msgstr "<b>Orden a ejecutar</b>"
+
+#: ../glade/pygrep.glade:1938
+msgid "Ignore files bigger than"
+msgstr "Ignorar los ficheros mayores que"
+
+#: ../glade/pygrep.glade:1957
+msgid "Mb"
+msgstr "Mb"
+
+#: ../glade/pygrep.glade:1970
+msgid "<b>File Limits</b>"
+msgstr "<b>Límites de fichero</b>"
+
+#: ../glade/pygrep.glade:1990
+msgid "Options"
+msgstr "Opciones"
+
+#: ../glade/pygrep.glade:2090
+msgid "<b>Directories to search in</b>"
+msgstr "<b>Directorios en los que buscar</b>"
+
+#: ../glade/pygrep.glade:2105
+msgid "Directories"
+msgstr "Directorios"
+
+#: ../glade/pygrep.glade:2205
+msgid "<b>Inclusion Patterns</b>"
+msgstr "<b>Patrones de inclusión</b>"
+
+#: ../glade/pygrep.glade:2304
+msgid "<b>Exclusion Patterns</b>"
+msgstr "<b>Patrones de exclusión</b>"
+
+#: ../glade/pygrep.glade:2324
+msgid "Patterns"
+msgstr "Patrones"
+
+#: ../glade/pygrep.glade:2416
+msgid "Regular Expresion:"
+msgstr "Expresión regular:"
+
+#: ../glade/pygrep.glade:2473
+msgid ""
+"This is a code of example.\n"
+"Here you can see some examples that may be useful to check your Regular "
+"Expresion.\n"
+"For example, you can see some C code:\n"
+"\n"
+"#include <stdio.h>\n"
+"int main (int argc, char* argv[])\n"
+"{\n"
+"\tprintf (\"hello world\\n\");\n"
+"\treturn 0;\n"
+"}\n"
+"\n"
+"Or some Python code too:\n"
+"\n"
+"#!/usr/bin/env python\n"
+"# -*- coding: utf-8 -*-\n"
+"def main ():\n"
+"\tprint \"hello world\"\n"
+"if __name__ == \"__main__\":\n"
+"\tmain ()\n"
+"\n"
+"Maybe HTML code:\n"
+"\n"
+"<html>\n"
+"<head>\n"
+"<title>Hello, world</title>\n"
+"</head>\n"
+"<body>\n"
+"\t<h1> Hello, world </h1>\n"
+"</body>\n"
+"</html>\n"
+"\n"
+"Or some lyrics:\n"
+"\n"
+"    Join us now and share the software:\n"
+"    you’ll be free, hackers, you’ll be free;\n"
+"    join us now and share the software:\n"
+"    you’ll be free, hackers, you’ll be free. \n"
+"\n"
+"And you can edit this text and change it for you favourite text."
+msgstr ""
+"Esto es un código de ejemplo.\n"
+"Aquí puede ver algunos ejemplos que pueden ser útiles para comprobar sus "
+"expresión regular.\n"
+"Por ejemplo, puede ver algo de código C:\n"
+"\n"
+"#include <stdio.h>\n"
+"int main (int argc, char* argv[])\n"
+"{\n"
+"\tprintf (\"Hola mundo\\n\");\n"
+"\treturn 0;\n"
+"}\n"
+"\n"
+"O también algo de código Python:\n"
+"\n"
+"#!/usr/bin/env python\n"
+"# -*- coding: utf-8 -*-\n"
+"def main ():\n"
+"\tprint \"hola mundo\"\n"
+"if __name__ == \"__main__\":\n"
+"\tmain ()\n"
+"\n"
+"Quizá código HTML:\n"
+"\n"
+"<html>\n"
+"<head>\n"
+"<title>Hola, mundo</title>\n"
+"</head>\n"
+"<body>\n"
+"\t<h1> Hola, mundo </h1>\n"
+"</body>\n"
+"</html>\n"
+"\n"
+"O letras de canciones:\n"
+"\n"
+"    Uniros a nosotros y compartid el software:\n"
+"    seréis libres, hackers, seréis libres;\n"
+"    Uniros a nosotros y compartid el software:\n"
+"    seréis libres, hackers, seréis libres.\n"
+"\n"
+"Y se puede editar este texto para cambiarlo por su texto favorito."
+
+#: ../glade/pygrep.glade:2523
+msgid "Sample Text "
+msgstr "Texto de ejemplo"
+
+#: ../glade/pygrep.glade:2577
+msgid "Matching Text "
+msgstr "Texto coincidente"

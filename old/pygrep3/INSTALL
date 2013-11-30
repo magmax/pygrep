@@ -1,0 +1,21 @@
+   INSTALLATION
+   ------------
+   
+It is very easy to install pygrep. The only thing you have to do is to
+download it whereever you want and then to make an script like this:
+
+--
+#!/bin/bash
+/complete/path/to/pygrep/pygrep.py
+--
+
+It has a bug in the Paths library, so it can find the .glade only if
+you do it so. If you know how to solve it, please, tell me.
+
+
+
+
+
+
+
+Do you want to contribute?

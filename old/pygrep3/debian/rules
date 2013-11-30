@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+DEB_PYTHON_SYSTEM=pycentral
+DBK2MAN_XSL=/usr/share/xml/docbook/stylesheet/nwalsh/manpages/docbook.xsl
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/python-distutils.mk
+
+
+build/pygrep::
+	xsltproc --nonet $(DBK2MAN_XSL) debian/pygrep.xml
+
+install/pygrep::
+	mv $(CURDIR)/debian/pygrep/usr/bin/pygrep.py $(CURDIR)/debian/pygrep/usr/bin/pygrep
+
+clean::
+	-rm pygrep.1

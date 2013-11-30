@@ -1,0 +1,25 @@
+pygrep (2.0.0-1.1) UNRELEASED; urgency=low
+
+  * Non-maintainer upload.
+  * deb pkg fixes
+
+ -- David Villa <David.Villa@uclm.es>  Tue, 10 Nov 2009 13:25:02 +0100
+
+pygrep (2.0.0-1) UNRELEASED; urgency=low
+
+  * New package version.
+
+ -- Miguel Angel Garcia <miguelangel.garcia@gmail.com>  Tue, 03 Nov 2009 07:41:53 +0100
+
+pygrep (1.2.1) UNRELEASED; urgency=low
+
+  * New package version.
+
+ -- Miguel Angel Garcia <miguelangel.garcia@gmail.com>  Sun,  11 Aug 2007 16:25:26 +0100
+
+pygrep (1.0.7) UNRELEASED; urgency=low
+
+  * New debian package.
+
+ -- Miguel Angel Garcia <miguelangel.garcia@gmail.com>  Sun,  4 Mar 2007 16:25:26 +0100
+

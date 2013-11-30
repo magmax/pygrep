@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+
+<!--
+
+`xsltproc -''-nonet \
+          -''-param man.charmap.use.subset "0" \
+          -''-param make.year.ranges "1" \
+          -''-param make.single.year.ranges "1" \
+          /usr/share/xml/docbook/stylesheet/nwalsh/manpages/docbook.xsl \
+          manpage.xml'
+
+A manual page <package>.<section> will be generated. You may view the
+manual page with: nroff -man <package>.<section> | less'. A typical entry
+in a Makefile or Makefile.am is:
+
+DB2MAN = /usr/share/sgml/docbook/stylesheet/xsl/nwalsh/manpages/docbook.xsl
+XP     = xsltproc -''-nonet -''-param man.charmap.use.subset "0"
+
+manpage.1: manpage.xml
+        $(XP) $(DB2MAN) $<
+
+The xsltproc binary is found in the xsltproc package. The XSL files are in
+docbook-xsl. A description of the parameters you can use can be found in the
+docbook-xsl-doc-* packages. Please remember that if you create the nroff
+version in one of the debian/rules file targets (such as build), you will need
+to include xsltproc and docbook-xsl in your Build-Depends control field.
+Alternatively use the xmlto command/package. That will also automatically
+pull in xsltproc and docbook-xsl.
+
+Notes for using docbook2x: docbook2x-man does not automatically create the
+AUTHOR(S) and COPYRIGHT sections. In this case, please add them manually as
+<refsect1> ... </refsect1>.
+
+To disable the automatic creation of the AUTHOR(S) and COPYRIGHT sections
+read /usr/share/doc/docbook-xsl/doc/manpages/authors.html. This file can be
+found in the docbook-xsl-doc-html package.
+
+Validation can be done using: `xmllint -''-noout -''-valid manpage.xml`
+
+General documentation about man-pages and man-page-formatting:
+man(1), man(7), http://www.tldp.org/HOWTO/Man-Page/
+
+-->
+
+  <!-- Fill in your name for FIRSTNAME and SURNAME. -->
+  <!ENTITY dhfirstname "Miguel Angel">
+  <!ENTITY dhsurname   "Garcia">
+  <!-- dhusername could also be set to "&firstname; &surname;". -->
+  <!ENTITY dhusername  "Miguel Angel Garcia">
+  <!ENTITY dhemail     "miguelangel.garcia@gmail.com">
+  <!-- SECTION should be 1-8, maybe w/ subsection other parameters are
+       allowed: see man(7), man(1) and
+       http://www.tldp.org/HOWTO/Man-Page/q2.html. -->
+  <!ENTITY dhsection   "1">
+  <!-- TITLE should be something like "User commands" or similar (see
+       http://www.tldp.org/HOWTO/Man-Page/q2.html). -->
+  <!ENTITY dhtitle     "User commands">
+  <!ENTITY dhucpackage "PYGREP">
+  <!ENTITY dhpackage   "pygrep">
+]>
+
+<refentry>
+  <refentryinfo>
+    <title>&dhtitle;</title>
+    <productname>&dhpackage;</productname>
+    <authorgroup>
+      <author>
+       <firstname>&dhfirstname;</firstname>
+        <surname>&dhsurname;</surname>
+        <contrib>Wrote this manpage for the Debian system.</contrib>
+        <address>
+          <email>&dhemail;</email>
+        </address>
+      </author>
+    </authorgroup>
+    <copyright>
+      <year>2007, 2008, 2009</year>
+      <holder>&dhusername;</holder>
+    </copyright>
+    <legalnotice>
+      <para>This manual page was written for the Debian system
+        (and may be used by others).</para>
+      <para>Permission is granted to copy, distribute and/or modify this
+        document under the terms of the GNU General Public License,
+        Version 3 or (at your option) any later version published by
+        the Free Software Foundation.</para>
+      <para>On Debian systems, the complete text of the GNU General Public
+        License can be found in
+        <filename>/usr/share/common-licenses/GPL</filename>.</para>
+    </legalnotice>
+  </refentryinfo>
+  <refmeta>
+    <refentrytitle>&dhucpackage;</refentrytitle>
+    <manvolnum>&dhsection;</manvolnum>
+  </refmeta>
+  <refnamediv>
+    <refname>&dhpackage;</refname>
+    <refpurpose>Pygrep is a GUI for using GREP.</refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <cmdsynopsis>
+      <command>&dhpackage;</command>
+      <arg choice="opt"><option>OPTIONS</option></arg>
+    </cmdsynopsis>
+    <cmdsynopsis>
+      <command>&dhpackage;</command>
+      <group choice="opt">
+        <arg choice="plain">
+          <group choice="req">
+            <arg choice="plain"><option>-h</option></arg>
+            <arg choice="plain"><option>--help</option></arg>
+          </group>
+        </arg>
+        <arg choice="plain">
+          <group choice="req">
+            <arg choice="plain"><option>--version</option></arg>
+          </group>
+        </arg>
+      </group>
+    </cmdsynopsis>
+  </refsynopsisdiv>
+  <refsect1 id="description">
+    <title>DESCRIPTION</title>
+    <para>This manual page documents briefly the
+      <command>&dhpackage;</command> and <command>bar</command>
+      commands.</para>
+      <!--
+    <para>This manual page was written for the Debian distribution
+      because the original program does not have a manual page.
+      Instead, it has documentation in the GNU <citerefentry>
+        <refentrytitle>info</refentrytitle>
+        <manvolnum>1</manvolnum>
+      </citerefentry> format; see below.</para>
+      -->
+    <para><command>&dhpackage;</command> is a program that allows you to search 
+      inside text files looking for patterns with a quick Graphical User
+      Interface (GUI).
+    </para>
+    <para>In fact, it is recomended to use <command>&dhpackage;</command> without
+      params. It will launch the graphical interface.
+    </para>
+    <para>The command line options are written only to allow some compatibility 
+      with <command>grep</command> format.
+    </para>
+  </refsect1>
+  <refsect1 id="options">
+    <title>OPTIONS</title>
+    <para>The program follows the usual GNU command line syntax,
+      with long options starting with two dashes (`-').  A summary of
+      options is included below.
+    </para>
+    <refsect2>
+      <title>Generic Program Information</title>
+      <variablelist>
+        <!-- Use the variablelist.term.separator and the
+            variablelist.term.break.after parameters to
+            control the term elements. -->
+        <varlistentry>
+          <term><option>-h</option></term>
+          <term><option>--help</option></term>
+          <listitem>
+            <para>Show summary of options.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>--version</option></term>
+          <listitem>
+            <para>Show version of program.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </refsect2>
+    <refsect2>
+      <title>Common Options</title>
+      <variablelist>
+        <varlistentry>
+          <term><option>-i</option></term>
+          <term><option>--ignore-case</option></term>
+          <listitem>
+            <para>Ignore case distinctions in both the PATTERN and the input files.
+            (-i is specified by POSIX.)
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>--pygrep-profile</option></term>
+          <listitem>
+            <para>Selects the FILE as the profile options file.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>--pygrep-include</option></term>
+          <listitem>
+            <para>Comma separated list of file patterns to include in the search.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>--pygrep-exclude</option></term>
+          <listitem>
+            <para>Comma separated list of directory patterns to include in the search.
+            </para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </refsect2>
+    <refsect2>
+      <title>Pygrep Options</title>
+    </refsect2>
+    <refsect2>
+      <title>Grep Options</title>
+      <variablelist>
+        <varlistentry>
+          <term><option>-G</option></term>
+          <term><option>--basic-regexp</option></term>
+          <listitem>
+            <para>Interpret the PATTERN as a basic regular expresion. See  
+              <citerefentry><refentrytitle>grep</refentrytitle><manvolnum>1</manvolnum></citerefentry> 
+              for further details.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>-E</option></term>
+          <term><option>--extended-regexp</option></term>
+          <listitem>
+            <para>Interpret the PATTERN as an extended regular expresion. See  
+              <citerefentry><refentrytitle>grep</refentrytitle><manvolnum>1</manvolnum></citerefentry> 
+              for further details.
+            </para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </refsect2>    
+    <refsect2>
+      <title>GUI Options</title>
+      <variablelist>
+        <varlistentry>
+          <term><option>--pygrep-psico</option></term>
+          <listitem>
+            <para>Uses "psico" lib to increment the speed of the program.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>--pygrep-engine</option></term>
+          <listitem>
+            <para>Selects the engine to use in searchs. Possible values are "pygrep" (default) or "grep". 
+            Each engine has its advantages.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term><option>--pygrep-command</option></term>
+          <listitem>
+            <para>Command to launch when mouse doble-click happens over the filenames or the matching lines.
+            </para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </refsect2>    
+  </refsect1>
+  <refsect1 id="files">
+    <title>FILES</title>
+    <variablelist>
+      <varlistentry>
+        <term><filename>${HOME}/.pygrep/initialconf</filename></term>
+        <listitem>
+          <para>The configuration file to control the which profile must be aplied.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term><filename>${HOME}/.pygrep/*.cfg</filename></term>
+        <listitem>
+          <para>Different profiles configuration.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsect1>
+  <refsect1 id="bugs">
+    <!-- Or use this section to tell about upstream BTS. -->
+    <title>BUGS</title>
+    <para>The program is currently limited to only work
+      with the GUI. Maybe in the future it will allow you an 
+      only-text option.
+    </para>
+    <para>A lot of <command>grep</command> options are not 
+      supported yet. Maybe it will be in future revisions.
+    </para>
+    <para>Problems can be reported at <ulink url="https://savannah.nongnu.org/bugs/?group=pygrep"/>.
+    </para>
+  </refsect1>
+  <refsect1 id="see_also">
+    <title>SEE ALSO</title>
+    <!-- In alpabetical order. -->
+    <para><citerefentry>
+        <refentrytitle>grep</refentrytitle>
+        <manvolnum>1</manvolnum>
+      </citerefentry>
+    </para>
+    <para>For more information, feedback, contributions or help, please
+    visit<ulink url="http://www.magmax.org"/></para>
+  </refsect1>
+</refentry>
+

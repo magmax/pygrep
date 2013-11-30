@@ -1,0 +1,19 @@
+Source: pygrep
+Section: utils
+Priority: extra
+Maintainer: Miguel Angel Garcia <miguelangel.garcia@gmail.com>
+Build-Depends: cdbs, debhelper (>= 7), python-all-dev, python-central (>= 0.5), docbook-to-man, docbook-xsl, xsltproc
+Standards-Version: 3.8.3
+Homepage: http://www.magmax.org/
+XS-Python-Version: all
+
+
+Package: pygrep
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
+XB-Python-Version: ${python:Versions}
+Description: Python Graphical Grep-like Tool.
+ Pygrep is a front-end with Graphical User Interface or GUI against GREP.
+ However, pygrep allows to use it own search engine.
+ It will show the matching lines in a table, so you can select one of them
+ and edit the file with your favourite editor.

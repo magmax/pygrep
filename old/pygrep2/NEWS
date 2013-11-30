@@ -1,0 +1,17 @@
+Release notes for non-GNU pygrep 1.0.0, Oct 2006
+
+  * Solved bugs in version 0.0.3 (see Changelog).
+
+
+Release notes for non-GNU pygrep 0.0.3, Sep 2006
+
+  * Changed GUI.
+
+  * The search is made in other threads.
+
+  * Changed search algorithm. It has now its own class and uses callbacks to
+    return the result.
+
+  * Changed version number from 0.1 to 0.0.3.
+
+  * Options saved
