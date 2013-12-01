@@ -48,7 +48,7 @@ class Token:
 
     def prettyprint ( self ):
         """ Prints the Token. """
-        print self
+        print(self)
 
 class Line:
     """
@@ -157,4 +157,4 @@ class SearchBuffer:
         return self.linelist[:]
     
 if __name__ == "__main__":
-    print "Hello World"
+    print("Hello World")
