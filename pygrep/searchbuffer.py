@@ -41,6 +41,9 @@ class Token:
     def __str__ ( self):
         return self.token
 
+    def __repr__(self):
+        return "[TOKEN: {s.token} - {s.matchs}]".format(s=self)
+
     def clone ( self ):
         """ Clones a Token """
         retval = Token ( self.token, self.matchs )
