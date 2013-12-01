@@ -23,7 +23,8 @@
 
 import os
 import sys
-import commands
+import subprocess
+import shlex
 import unittest
 
 from pygrep.searchbuffer import Line
@@ -209,7 +210,8 @@ class  TesterSearchbufferTestCase(unittest.TestCase):
             pattern=pattern.replace (".", "\\."),
             filename=self.TESTING_FILE,
         )
-        result = commands.getoutput(grep_cmd).splitlines()
+        out, err, rc = self.__execute(grep_cmd)
+        result = out.splitlines()
         sbuffer = SearchBuffer ()
         filed = open (self.TESTING_FILE)
         i = 0
@@ -229,6 +231,11 @@ class  TesterSearchbufferTestCase(unittest.TestCase):
 
         filed.close ()
 
+
+    def __execute(self, command):
+        p = subprocess.Popen(shlex.split(command), stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+        stdout, stderr = p.communicate()
+        return (stdout, stderr, p.wait())
 
     def test_basic1 (self):
         """ Searchs for "software" and compares with "grep" output """
