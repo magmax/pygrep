@@ -197,7 +197,7 @@ class  TesterSearchbufferTestCase(unittest.TestCase):
         """ Creates a Line object from a string and a pattern. """
         splitted = textline.rstrip().split(pattern)
         line = Line (0)
-        for j in xrange (len (splitted)):
+        for j in range(len (splitted)):
             text = splitted[j]
             line.append (Token (text, False))
             if (j != len(splitted) -1):

@@ -65,7 +65,7 @@ class Line:
             return 1
         if len (self.tokenlist) != len ( item.tokenlist):
             return 1
-        for i in xrange ( len ( self.tokenlist) ):
+        for i in range ( len ( self.tokenlist) ):
             if self.tokenlist[i] != item.tokenlist[i]:
                 return 1
         return 0
